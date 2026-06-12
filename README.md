@@ -11,8 +11,23 @@ Built with Next.js 16 (App Router), React 19, Tailwind v4. Sci-fi HUD aesthetic.
 | `/` | **Publication** — featured + all essays. The main page. |
 | `/essays/[slug]` | An essay, rendered from markdown. |
 | `/profile` | Personal HUD profile (photo, trajectory, videos, contact). |
-| `/dashboard` | 🔜 Layer 2 scaffold — the private OpenClaw command center. |
-| `/api/agent` | 🛰️ Layer 3 scaffold — the agent endpoint. |
+| `/dashboard` | 🔒 Layer 2 — the private OpenClaw command center (password-gated). |
+| `/login` | Passphrase screen for the dashboard. |
+| `/api/agent` | 🛰️ Layer 3 scaffold — the agent endpoint (also gated). |
+
+## Private dashboard auth
+
+`/dashboard` and `/api/agent` are protected by a single-user password gate
+(`middleware.ts` + a signed HttpOnly session cookie). Set two env vars in `.env.local`:
+
+```bash
+DASHBOARD_PASSWORD=your-password-here
+AUTH_SECRET=$(openssl rand -hex 32)
+```
+
+See [`.env.example`](.env.example). Local dev currently uses the password `openclaw` —
+change it before deploying. On Vercel, add both as Environment Variables. To upgrade to
+real accounts later, swap the gate for Clerk or NextAuth without touching the route groups.
 
 ## Add an essay (the main way you'll grow this)
 
