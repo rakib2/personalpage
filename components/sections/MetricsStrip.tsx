@@ -3,7 +3,6 @@ import { profile } from "@/content/profile";
 /** Row of HUD readouts. PAPERS/VIDEOS auto-fill from your content. */
 export function MetricsStrip() {
   const metrics = profile.metrics.map((m) => {
-    if (m.label === "PAPERS") return { ...m, value: String(profile.papers.length) };
     if (m.label === "VIDEOS") return { ...m, value: String(profile.videos.length) };
     return m;
   });

@@ -6,7 +6,7 @@ import { Clock } from "./Clock";
 export function StatusBar() {
   const nav = [
     { label: "ABOUT", href: "#about" },
-    { label: "PAPERS", href: "#papers" },
+    { label: "TRAJECTORY", href: "#trajectory" },
     { label: "VIDEOS", href: "#videos" },
     { label: "CONTACT", href: "#contact" },
   ];

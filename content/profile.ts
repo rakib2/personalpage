@@ -12,12 +12,13 @@ export type Social = {
   handle?: string;
 };
 
-export type Paper = {
-  title: string;
-  venue: string; // conference / journal / "Preprint"
-  year: number;
-  authors: string; // your name in bold is handled in the UI
-  href: string; // link to PDF / arXiv / DOI
+export type Experience = {
+  role: string;
+  org: string;
+  period: string; // e.g. "2024 — Now" or "Present"
+  blurb: string;
+  href?: string; // link to the company / project
+  current?: boolean; // shows a live "ACTIVE" marker
   tags?: string[];
 };
 
@@ -39,14 +40,16 @@ export const profile = {
   // ── Identity ───────────────────────────────────────────────
   name: "Rakib Hasan",
   callsign: "RAKIB", // shown in the HUD frame
+  // Photo lives in /public. Swap the file to change it.
+  photo: "/rakib.jpg",
   // Rotating roles in the hero. Add or remove freely.
-  roles: ["Founder", "Engineer", "B2B Consultant"],
+  roles: ["Software Engineer", "Builder", "Aspiring Founder"],
   location: "Earth",
   // One or two sentences. This is your brand statement.
   tagline:
-    "Founder of Flowlakes. Engineer with years of B2B consulting behind me — turning hard technical problems into systems businesses actually run on.",
+    "Software engineer and builder, chasing the founder path. I turn ideas into things that ship — and I'm building Flowlakes to do it at scale.",
   // A longer "about" paragraph.
-  bio: "I'm the founder of Flowlakes. Before that — and still today — I work as an engineer with years of B2B consulting experience, helping companies design and ship systems that hold up in the real world. I'm most interested in the space where autonomous agents, good interfaces, and real human workflows meet. This site is mission control for everything I build.",
+  bio: "I'm a software engineer and builder with years of B2B consulting experience, helping companies design and ship systems that hold up in the real world. Now I'm building Flowlakes and working toward the founder I want to become. I care about good interfaces, autonomous agents, and the craft of turning a rough idea into something people actually use. This site is mission control for everything I build.",
 
   // ── Status line (the HUD vibe) ─────────────────────────────
   status: "ONLINE",
@@ -55,9 +58,9 @@ export const profile = {
   // ── Quick metrics shown on the dashboard strip ─────────────
   // Swap these for anything you want to track publicly.
   metrics: [
-    { label: "PAPERS", value: "—" },
+    { label: "FOCUS", value: "SHIPPING", progress: 82 },
+    { label: "VENTURE", value: "FLOWLAKES" },
     { label: "VIDEOS", value: "—" },
-    { label: "FOCUS", value: "AGENTS", progress: 78 },
     { label: "UPTIME", value: "ALWAYS", progress: 100 },
   ] as Metric[],
 
@@ -65,23 +68,42 @@ export const profile = {
   socials: [
     { label: "GitHub", href: "https://github.com/", handle: "@rakib" },
     { label: "X", href: "https://x.com/", handle: "@rakib" },
-    { label: "LinkedIn", href: "https://linkedin.com/in/", handle: "rakib" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/rakib99/", handle: "in/rakib99" },
     { label: "YouTube", href: "https://youtube.com/@", handle: "@rakib" },
     { label: "Flowlakes", href: "https://flowlakes.com", handle: "flowlakes.com" },
     { label: "Email", href: "mailto:rakib@flowlakes.com", handle: "rakib@flowlakes.com" },
   ] as Social[],
 
-  // ── Papers ─────────────────────────────────────────────────
-  papers: [
+  // ── Trajectory (LinkedIn-style experience) ─────────────────
+  // Most recent first. Edit freely — this replaces "papers".
+  experience: [
     {
-      title: "Replace with your paper title",
-      venue: "Preprint",
-      year: 2026,
-      authors: "Rakib Hasan, Co-Author",
-      href: "#",
-      tags: ["agents", "systems"],
+      role: "Founder",
+      org: "Flowlakes",
+      period: "Present",
+      current: true,
+      blurb:
+        "Building Flowlakes — turning years of engineering and consulting into a product of my own.",
+      href: "https://flowlakes.com",
+      tags: ["founder", "product", "0→1"],
     },
-  ] as Paper[],
+    {
+      role: "Software Engineer · B2B Consultant",
+      org: "Independent",
+      period: "Several years",
+      blurb:
+        "Designed and shipped systems for B2B clients — from architecture to delivery, the kind of work that has to survive contact with real users.",
+      tags: ["engineering", "b2b", "delivery"],
+    },
+    {
+      role: "Builder",
+      org: "Side projects",
+      period: "Always",
+      blurb:
+        "Always building something. Tools, experiments, and the occasional thing that turns into more.",
+      tags: ["builder", "experiments"],
+    },
+  ] as Experience[],
 
   // ── Videos ─────────────────────────────────────────────────
   videos: [

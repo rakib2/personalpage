@@ -2,7 +2,7 @@ import { StatusBar } from "@/components/hud/StatusBar";
 import { Hero } from "@/components/sections/Hero";
 import { MetricsStrip } from "@/components/sections/MetricsStrip";
 import { About } from "@/components/sections/About";
-import { Papers } from "@/components/sections/Papers";
+import { Trajectory } from "@/components/sections/Trajectory";
 import { Videos } from "@/components/sections/Videos";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
@@ -16,7 +16,7 @@ export default function Home() {
         <MetricsStrip />
         <div className="mt-8 space-y-8">
           <About />
-          <Papers />
+          <Trajectory />
           <Videos />
           <Contact />
         </div>
