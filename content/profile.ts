@@ -37,6 +37,15 @@ export type Metric = {
 };
 
 export const profile = {
+  // ── Publication (the main page) ────────────────────────────
+  // The home page is a publication of essays. This is its masthead.
+  publication: {
+    name: "Field Notes",
+    kicker: "build log",
+    tagline:
+      "Building OpenClaw — a personal AI command center in the cloud — out in the open. Essays on agents, shipping software, and the road from engineer to founder.",
+  },
+
   // ── Identity ───────────────────────────────────────────────
   name: "Rakib Hasan",
   callsign: "RAKIB", // shown in the HUD frame

@@ -14,17 +14,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${profile.name} — ${profile.roles.join(" / ")}`,
-  description: profile.tagline,
+  title: {
+    default: `${profile.publication.name} — ${profile.name}`,
+    template: `%s`,
+  },
+  description: profile.publication.tagline,
   openGraph: {
-    title: profile.name,
-    description: profile.tagline,
+    title: profile.publication.name,
+    description: profile.publication.tagline,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: profile.name,
-    description: profile.tagline,
+    title: profile.publication.name,
+    description: profile.publication.tagline,
   },
 };
 

@@ -4,11 +4,11 @@ import { Clock } from "./Clock";
 
 /** Fixed top heads-up bar: callsign, live status, nav, clock. */
 export function StatusBar() {
+  const email = profile.socials.find((s) => s.label === "Email");
   const nav = [
-    { label: "ABOUT", href: "#about" },
-    { label: "TRAJECTORY", href: "#trajectory" },
-    { label: "VIDEOS", href: "#videos" },
-    { label: "CONTACT", href: "#contact" },
+    { label: "ESSAYS", href: "/" },
+    { label: "PROFILE", href: "/profile" },
+    ...(email ? [{ label: "CONTACT", href: email.href, external: true }] : []),
   ];
 
   return (
@@ -25,15 +25,17 @@ export function StatusBar() {
         </div>
 
         <nav className="hidden items-center gap-6 md:flex">
-          {nav.map((n) => (
-            <a
-              key={n.href}
-              href={n.href}
-              className="label text-fg-dim hover:text-accent"
-            >
-              {n.label}
-            </a>
-          ))}
+          {nav.map((n) =>
+            "external" in n && n.external ? (
+              <a key={n.label} href={n.href} className="label text-fg-dim hover:text-accent">
+                {n.label}
+              </a>
+            ) : (
+              <Link key={n.label} href={n.href} className="label text-fg-dim hover:text-accent">
+                {n.label}
+              </Link>
+            )
+          )}
         </nav>
 
         <Clock />
