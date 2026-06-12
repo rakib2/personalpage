@@ -40,13 +40,13 @@ export const profile = {
   name: "Rakib Hasan",
   callsign: "RAKIB", // shown in the HUD frame
   // Rotating roles in the hero. Add or remove freely.
-  roles: ["Engineer", "Researcher", "Builder"],
+  roles: ["Founder", "Engineer", "B2B Consultant"],
   location: "Earth",
   // One or two sentences. This is your brand statement.
   tagline:
-    "Building systems that think. Researching the edge of what software can do, and turning it into things people use every day.",
+    "Founder of Flowlakes. Engineer with years of B2B consulting behind me — turning hard technical problems into systems businesses actually run on.",
   // A longer "about" paragraph.
-  bio: "I design and build intelligent systems — from research prototypes to production tools. I'm most interested in the space where autonomous agents, good interfaces, and real human workflows meet. This site is mission control for everything I make.",
+  bio: "I'm the founder of Flowlakes. Before that — and still today — I work as an engineer with years of B2B consulting experience, helping companies design and ship systems that hold up in the real world. I'm most interested in the space where autonomous agents, good interfaces, and real human workflows meet. This site is mission control for everything I build.",
 
   // ── Status line (the HUD vibe) ─────────────────────────────
   status: "ONLINE",
@@ -67,8 +67,8 @@ export const profile = {
     { label: "X", href: "https://x.com/", handle: "@rakib" },
     { label: "LinkedIn", href: "https://linkedin.com/in/", handle: "rakib" },
     { label: "YouTube", href: "https://youtube.com/@", handle: "@rakib" },
-    { label: "Scholar", href: "https://scholar.google.com/", handle: "profile" },
-    { label: "Email", href: "mailto:rakib2090@gmail.com", handle: "rakib2090@gmail.com" },
+    { label: "Flowlakes", href: "https://flowlakes.com", handle: "flowlakes.com" },
+    { label: "Email", href: "mailto:rakib@flowlakes.com", handle: "rakib@flowlakes.com" },
   ] as Social[],
 
   // ── Papers ─────────────────────────────────────────────────
