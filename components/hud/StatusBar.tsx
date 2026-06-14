@@ -10,8 +10,8 @@ export function StatusBar() {
         </Link>
 
         <nav className="flex items-center gap-6 font-mono text-xs text-fg-dim">
-          <a href="#writing" className="hover:text-accent">Writing</a>
-          <a href="#experience" className="hover:text-accent">Experience</a>
+          <a href="/#writing" className="hover:text-accent">Writing</a>
+          <a href="/#experience" className="hover:text-accent">Experience</a>
           <a href="mailto:rakib@flowlakes.com" className="hover:text-accent">Contact</a>
         </nav>
       </div>

@@ -10,7 +10,7 @@ After years of IT service management consulting, I kept seeing the same pattern.
 
 Then AI tools arrived.
 
-The problem was not that enterprise platforms had no structure. They did. In most cases enterprise platforms had exactly the kind of guardrails: records, permissions, approvals, audit trails, state models, and ownership.
+The problem was not that enterprise platforms had no structure. They did. In most cases, enterprise platforms had exactly the kind of guardrails enterprises need: records, permissions, approvals, audit trails, state models, and ownership.
 
 The problem was that most AI integrations treated the agent like a chatbot sitting on top of the system, not like a participant inside the process.
 
@@ -34,7 +34,7 @@ Flowlakes is my attempt to build workflow infrastructure that is not only usable
 
 Forms define the data. Tables hold the records. Workflows define states and transitions. Permissions define who — or what — can act at each stage. Approval rules define when a human must stay in control. Audit trails record what happened. Agent-facing interfaces expose the process in a structured, explainable way.
 
-When an AI agent acts inside Flowlakes, it is not guessing from a prompt or scraping context from a UI. It is operating through defined actions, constrained by permissions using role based access control, grounded in records, and able to explain what it is doing before it does it.
+When an AI agent acts inside Flowlakes, it is not guessing from a prompt or scraping context from a UI. It is operating through defined actions, constrained by permissions using role-based access control, grounded in records, and able to explain what it is doing before it does it.
 
 ## Why this, why now
 

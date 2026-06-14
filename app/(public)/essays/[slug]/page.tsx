@@ -37,7 +37,7 @@ export default async function EssayPage({
     <main className="mx-auto w-full max-w-3xl flex-1 px-4 sm:px-6">
       <div className="pt-12 sm:pt-16">
         <Link
-          href="/"
+          href="/#writing"
           className="label text-fg-dim hover:text-accent"
         >
           ← {profile.publication.name}
@@ -77,7 +77,7 @@ export default async function EssayPage({
       </article>
 
       <div className="border-t border-[var(--panel-border)] py-8">
-        <Link href="/" className="label text-accent hover:underline">
+        <Link href="/#writing" className="label text-accent hover:underline">
           ← back to all essays
         </Link>
       </div>

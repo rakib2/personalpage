@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   },
   description: profile.publication.tagline,
   openGraph: {
-    title: profile.publication.name,
-    description: profile.publication.tagline,
+    title: `${profile.name} — Founder of Flowlakes`,
+    description: profile.tagline,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: profile.publication.name,
-    description: profile.publication.tagline,
+    title: `${profile.name} — Founder of Flowlakes`,
+    description: profile.tagline,
   },
 };
 
