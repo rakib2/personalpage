@@ -53,7 +53,7 @@ export const profile = {
   location: "Germany",
   tagline:
     "I build AI-ready workflow software for companies that need governed business processes without heavyweight enterprise implementation.",
-  bio: "I'm a software engineer and ITSM consultant based in Germany. Originally from Bangladesh, I've spent the last several years helping enterprise teams across Europe design and implement workflow systems.\n\nMy work at Accenture, CGI, and client environments gave me a practical view of how companies actually run processes: incidents, assets, approvals, onboarding, service requests, escalations, and audits.\n\nServiceNow showed me what mature enterprise workflow can look like. Flowlakes is my attempt to make that level of structure more accessible, faster to adopt, and ready for AI agents.",
+  bio: "I'm a software engineer and ITSM consultant based in Germany. I've spent the last several years helping enterprise teams across Europe design and implement workflow systems.\n\nMy work at Accenture, CGI, and client environments gave me a practical view of how companies actually run processes: incidents, assets, approvals, onboarding, service requests, escalations, and audits.\n\nServiceNow showed me what mature enterprise workflow can look like. Flowlakes is my attempt to make that level of structure more accessible, faster to adopt, and ready for AI agents.",
 
   // ── Status line ─────────────────────────────────────────────
   status: "ONLINE",
