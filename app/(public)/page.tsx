@@ -54,8 +54,10 @@ export default function Home() {
       </section>
 
       {/* ── About ────────────────────────────────────────────── */}
-      <section>
-        <p className="text-[0.95rem] leading-relaxed text-fg-dim">{profile.bio}</p>
+      <section className="space-y-4">
+        {profile.bio.split("\n\n").map((para, i) => (
+          <p key={i} className="text-[0.95rem] leading-relaxed text-fg-dim">{para}</p>
+        ))}
       </section>
 
       {/* ── Building ─────────────────────────────────────────── */}
