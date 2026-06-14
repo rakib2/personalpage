@@ -1,25 +1,27 @@
 ---
-title: "Start Here: Why I'm Building in Public"
+title: "Start Here: From ITSM Consultant to Founder"
 date: "2026-06-10"
-summary: "A short note on what this publication is, who it's for, and why I'm documenting the whole thing as I go."
+summary: "Who I am, what I'm building, and why I'm documenting the whole thing in public."
 tags: ["build-in-public", "intro"]
 featured: false
 ---
 
 This is a build log.
 
-I'm a software engineer and builder with years of B2B consulting behind me, now working toward the founder I want to become. Most of what I've learned came from people who shared their work openly — their architectures, their dead ends, their "here's what I'd do differently." This is me paying that forward.
+I'm a software engineer and ITSM consultant — six years at Accenture and CGI, shipping ServiceNow and workflow systems for large enterprises. Now I'm building [Flowlakes](https://flowlakes.com): a service-management platform that gives companies a modern, AI-ready alternative to the $80k/year software I spent my career implementing.
 
-## What you'll find here
+## Why I'm writing this
 
-Essays on the things I'm actually building, written so they're useful even if you never meet me:
+Everything I know came from people who shared their work. Their architectures, their dead ends, their "here's what I'd do differently." This is me paying that forward.
 
-- **Architecture you can copy.** Real systems, real trade-offs, not toy demos.
-- **The agent stuff, demystified.** What "AI agents" actually are once you strip the hype — and how to wire them to real tools.
-- **The founder road.** Notes from someone making the jump from shipping for clients to shipping for himself.
+I'm writing about:
 
-## Why public
+- **What the enterprise workflow problem actually is.** Not the product pitch — the real observation from years inside large IT departments.
+- **How Flowlakes is built.** Real decisions, real trade-offs, nothing sanitized.
+- **The founder road.** Notes from someone making the transition from shipping for clients to shipping for himself.
 
-Three reasons. Writing it down forces me to actually understand it. Sharing it means someone smarter than me can tell me where I'm wrong. And the best version of this work is the one other people can build on.
+## Where to start
 
-If something here saves you an afternoon, it did its job. Start with [Building OpenClaw](/essays/building-openclaw-in-the-cloud) — that's the project this whole site is becoming.
+Read [Why AI Agents Need Business Process Infrastructure](/essays/why-ai-agents-need-business-process-infrastructure) — that's the core insight that led to Flowlakes.
+
+If you want to talk, reach me at rakib@flowlakes.com.

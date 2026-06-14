@@ -286,6 +286,14 @@ a {
   margin: 2.4em 0;
 }
 
+.section-label {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fg-faint);
+}
+
 ::selection {
   background: rgba(var(--accent-rgb), 0.28);
   color: #fff;

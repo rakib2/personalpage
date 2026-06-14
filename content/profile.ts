@@ -38,87 +38,78 @@ export type Metric = {
 
 export const profile = {
   // ── Publication (the main page) ────────────────────────────
-  // The home page is a publication of essays. This is its masthead.
   publication: {
-    name: "Field Notes",
-    kicker: "build log",
+    name: "Build Log",
+    kicker: "flowlakes",
     tagline:
-      "Building OpenClaw — a personal AI command center in the cloud — out in the open. Essays on agents, shipping software, and the road from engineer to founder.",
+      "Notes on building Flowlakes — a service-management platform that gives AI agents a governed place to work on real business processes. From ITSM consultant to founder.",
   },
 
   // ── Identity ───────────────────────────────────────────────
   name: "Rakib Hasan",
-  callsign: "RAKIB", // shown in the HUD frame
-  // Photo lives in /public. Swap the file to change it.
+  callsign: "RAKIB",
   photo: "/rakib.jpg",
-  // Rotating roles in the hero. Add or remove freely.
-  roles: ["Software Engineer", "Builder", "Aspiring Founder"],
-  location: "Earth",
-  // One or two sentences. This is your brand statement.
+  roles: ["Founder, Flowlakes", "ITSM / ServiceNow Consultant", "Software Engineer"],
+  location: "Germany",
   tagline:
-    "Software engineer and builder, chasing the founder path. I turn ideas into things that ship — and I'm building Flowlakes to do it at scale.",
-  // A longer "about" paragraph.
-  bio: "I'm a software engineer and builder with years of B2B consulting experience, helping companies design and ship systems that hold up in the real world. Now I'm building Flowlakes and working toward the founder I want to become. I care about good interfaces, autonomous agents, and the craft of turning a rough idea into something people actually use. This site is mission control for everything I build.",
+    "6 years of ServiceNow consulting taught me what enterprise workflow software gets wrong. Now I'm building Flowlakes — modern, AI-ready service management for companies that need structure without the enterprise price tag.",
+  bio: "I'm a software engineer and ITSM consultant. I spent 6–7 years at Accenture and CGI implementing ServiceNow and workflow systems for large enterprises across Europe. That work gave me a clear view of the gap: companies need governed, auditable business processes — incident management, asset tracking, HR onboarding, approvals — but the dominant tools are expensive, slow to implement, and not built for AI. Flowlakes is what I'm building to fix that.",
 
-  // ── Status line (the HUD vibe) ─────────────────────────────
+  // ── Status line ─────────────────────────────────────────────
   status: "ONLINE",
   statusDetail: "all systems nominal",
 
-  // ── Quick metrics shown on the dashboard strip ─────────────
-  // Swap these for anything you want to track publicly.
-  metrics: [
-    { label: "FOCUS", value: "SHIPPING", progress: 82 },
-    { label: "VENTURE", value: "FLOWLAKES" },
-    { label: "VIDEOS", value: "—" },
-    { label: "UPTIME", value: "ALWAYS", progress: 100 },
-  ] as Metric[],
+  // ── Quick metrics ───────────────────────────────────────────
+  metrics: [] as Metric[],
 
   // ── Links ──────────────────────────────────────────────────
   socials: [
-    { label: "GitHub", href: "https://github.com/", handle: "@rakib" },
-    { label: "X", href: "https://x.com/", handle: "@rakib" },
+    { label: "GitHub", href: "https://github.com/rakib2", handle: "@rakib2" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/rakib99/", handle: "in/rakib99" },
-    { label: "YouTube", href: "https://youtube.com/@", handle: "@rakib" },
     { label: "Flowlakes", href: "https://flowlakes.com", handle: "flowlakes.com" },
     { label: "Email", href: "mailto:rakib@flowlakes.com", handle: "rakib@flowlakes.com" },
   ] as Social[],
 
-  // ── Trajectory (LinkedIn-style experience) ─────────────────
-  // Most recent first. Edit freely — this replaces "papers".
+  // ── Trajectory ─────────────────────────────────────────────
   experience: [
     {
       role: "Founder",
       org: "Flowlakes",
-      period: "Present",
+      period: "2024 — Now",
       current: true,
       blurb:
-        "Building Flowlakes — turning years of engineering and consulting into a product of my own.",
+        "Building Flowlakes — a service-management and workflow platform for companies that need governed business processes without the enterprise price tag. Incident management, asset tracking, approvals, and custom workflows with full audit trails and AI agent support.",
       href: "https://flowlakes.com",
-      tags: ["founder", "product", "0→1"],
+      tags: ["founder", "saas", "itsm", "ai-agents"],
     },
     {
-      role: "Software Engineer · B2B Consultant",
-      org: "Independent",
-      period: "Several years",
+      role: "Senior Consultant",
+      org: "CGI",
+      period: "Oct 2024 — Present",
       blurb:
-        "Designed and shipped systems for B2B clients — from architecture to delivery, the kind of work that has to survive contact with real users.",
-      tags: ["engineering", "b2b", "delivery"],
+        "ServiceNow and ITSM consulting for enterprise clients — architecture, implementation, and delivery.",
+      tags: ["servicenow", "itsm", "consulting"],
     },
     {
-      role: "Builder",
-      org: "Side projects",
-      period: "Always",
+      role: "Cloud & ITSM Analyst",
+      org: "Accenture DACH",
+      period: "Dec 2020 — Oct 2024",
       blurb:
-        "Always building something. Tools, experiments, and the occasional thing that turns into more.",
-      tags: ["builder", "experiments"],
+        "Helped architect a multi-cloud sovereign solution for portable cloud resources across hyperscalers, including European cloud provider STACKIT. Team placed 2nd at Service Management Forum Switzerland for the sovereign-cloud approach.",
+      tags: ["cloud", "architecture", "servicenow", "sovereign-cloud"],
+    },
+    {
+      role: "IT Business Relationship Manager",
+      org: "PepsiCo",
+      period: "Sep 2019 — Aug 2020",
+      blurb:
+        "Bridged IT and business stakeholders; managed project delivery, vendor relationships, and technology rollouts.",
+      tags: ["it", "stakeholder-management", "delivery"],
     },
   ] as Experience[],
 
   // ── Videos ─────────────────────────────────────────────────
-  videos: [
-    // Paste the id after youtube.com/watch?v=  →  here
-    { title: "Replace with a real video", youtubeId: "dQw4w9WgXcQ", date: "2026" },
-  ] as Video[],
+  videos: [] as Video[],
 } as const;
 
 export type Profile = typeof profile;
