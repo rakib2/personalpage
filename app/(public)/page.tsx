@@ -54,22 +54,8 @@ export default function Home() {
       </section>
 
       {/* ── About ────────────────────────────────────────────── */}
-      <section className="space-y-4">
-        <p className="text-[0.95rem] leading-relaxed text-fg-dim">
-          I&apos;m a software engineer and ITSM consultant based in Germany. Originally from
-          Bangladesh, I&apos;ve spent the last several years helping enterprise teams across Europe
-          design and implement workflow systems.
-        </p>
-        <p className="text-[0.95rem] leading-relaxed text-fg-dim">
-          My work at Accenture, CGI, and client environments gave me a practical view of how
-          companies actually run processes: incidents, assets, approvals, onboarding, service
-          requests, escalations, and audits.
-        </p>
-        <p className="text-[0.95rem] leading-relaxed text-fg-dim">
-          ServiceNow showed me what mature enterprise workflow can look like. Flowlakes is my
-          attempt to make that level of structure more accessible, faster to adopt, and ready for
-          AI agents.
-        </p>
+      <section>
+        <p className="text-[0.95rem] leading-relaxed text-fg-dim">{profile.bio}</p>
       </section>
 
       {/* ── Building ─────────────────────────────────────────── */}
