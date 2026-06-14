@@ -33,7 +33,7 @@ export default function Home() {
         <div>
           <h1 className="text-2xl font-semibold text-fg sm:text-3xl">{profile.name}</h1>
           <p className="mt-0.5 font-mono text-sm text-accent">
-            Founder, Flowlakes · Software Engineer
+            Founder, Flowlakes · Software Engineer · ITSM Consultant
           </p>
           <p className="mt-4 text-[0.95rem] leading-relaxed text-fg-dim">{profile.tagline}</p>
 
@@ -54,8 +54,22 @@ export default function Home() {
       </section>
 
       {/* ── About ────────────────────────────────────────────── */}
-      <section>
-        <p className="text-[0.95rem] leading-relaxed text-fg-dim">{profile.bio}</p>
+      <section className="space-y-4">
+        <p className="text-[0.95rem] leading-relaxed text-fg-dim">
+          I&apos;m a software engineer and ITSM consultant based in Germany. Originally from
+          Bangladesh, I&apos;ve spent the last several years helping enterprise teams across Europe
+          design and implement workflow systems.
+        </p>
+        <p className="text-[0.95rem] leading-relaxed text-fg-dim">
+          My work at Accenture, CGI, and client environments gave me a practical view of how
+          companies actually run processes: incidents, assets, approvals, onboarding, service
+          requests, escalations, and audits.
+        </p>
+        <p className="text-[0.95rem] leading-relaxed text-fg-dim">
+          ServiceNow showed me what mature enterprise workflow can look like. Flowlakes is my
+          attempt to make that level of structure more accessible, faster to adopt, and ready for
+          AI agents.
+        </p>
       </section>
 
       {/* ── Building ─────────────────────────────────────────── */}
@@ -76,10 +90,10 @@ export default function Home() {
             </span>
           </div>
           <p className="text-[0.95rem] text-fg-dim leading-relaxed">
-            A service-management and workflow platform — modern, AI-ready, and priced for companies
-            that need governed business processes without the six-figure ServiceNow contract.
-            Incident management, asset tracking, HR onboarding, approvals, and custom workflows
-            with full audit trails and structured AI agent support.
+            A service-management and workflow platform for teams that need governed, auditable
+            business processes without a six-figure implementation cycle. Incident management,
+            asset tracking, approvals, onboarding, and custom workflows — with audit trails,
+            permissions, integrations, and AI-agent support built into the foundation.
           </p>
         </div>
 
@@ -166,8 +180,8 @@ export default function Home() {
       <section id="contact">
         <h2 className="section-label mb-3">Contact</h2>
         <p className="text-[0.95rem] text-fg-dim">
-          If you're working on ITSM, enterprise workflow, or AI agents in production, I'd like to
-          hear from you.{" "}
+          If you&apos;re working on ITSM, enterprise workflow, service operations, or AI agents in
+          production, I&apos;d like to hear from you.{" "}
           <a href="mailto:rakib@flowlakes.com" className="text-accent hover:underline">
             rakib@flowlakes.com
           </a>

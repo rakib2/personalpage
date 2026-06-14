@@ -52,8 +52,8 @@ export const profile = {
   roles: ["Founder, Flowlakes", "ITSM / ServiceNow Consultant", "Software Engineer"],
   location: "Germany",
   tagline:
-    "6 years of ServiceNow consulting taught me what enterprise workflow software gets wrong. Now I'm building Flowlakes — modern, AI-ready service management for companies that need structure without the enterprise price tag.",
-  bio: "I'm a software engineer and ITSM consultant. I spent 6–7 years at Accenture and CGI implementing ServiceNow and workflow systems for large enterprises across Europe. That work gave me a clear view of the gap: companies need governed, auditable business processes — incident management, asset tracking, HR onboarding, approvals — but the dominant tools are expensive, slow to implement, and not built for AI. Flowlakes is what I'm building to fix that.",
+    "I build AI-ready workflow software for companies that need governed business processes without heavyweight enterprise implementation.",
+  bio: "I'm a software engineer and ITSM consultant based in Germany. Originally from Bangladesh, I've spent the last several years helping enterprise teams across Europe design and implement workflow systems. My work at Accenture, CGI, and client environments gave me a practical view of how companies actually run processes: incidents, assets, approvals, onboarding, service requests, escalations, and audits. ServiceNow showed me what mature enterprise workflow can look like. Flowlakes is my attempt to make that level of structure more accessible, faster to adopt, and ready for AI agents.",
 
   // ── Status line ─────────────────────────────────────────────
   status: "ONLINE",
@@ -78,7 +78,7 @@ export const profile = {
       period: "2024 — Now",
       current: true,
       blurb:
-        "Building Flowlakes — a service-management and workflow platform for companies that need governed business processes without the enterprise price tag. Incident management, asset tracking, approvals, and custom workflows with full audit trails and AI agent support.",
+        "Building AI-ready workflow infrastructure for service management, approvals, assets, and business processes.",
       href: "https://flowlakes.com",
       tags: ["founder", "saas", "itsm", "ai-agents"],
     },
@@ -87,7 +87,7 @@ export const profile = {
       org: "CGI",
       period: "Oct 2024 — Present",
       blurb:
-        "ServiceNow and ITSM consulting for enterprise clients — architecture, implementation, and delivery.",
+        "ServiceNow and ITSM consulting for enterprise clients, including architecture, implementation, and delivery.",
       tags: ["servicenow", "itsm", "consulting"],
     },
     {
@@ -95,7 +95,7 @@ export const profile = {
       org: "Accenture DACH",
       period: "Dec 2020 — Oct 2024",
       blurb:
-        "Helped architect a multi-cloud sovereign solution for portable cloud resources across hyperscalers, including European cloud provider STACKIT. Team placed 2nd at Service Management Forum Switzerland for the sovereign-cloud approach.",
+        "Worked on ITSM and cloud-service-management initiatives, including a sovereign multi-cloud concept involving European cloud provider STACKIT. The team placed 2nd at Service Management Forum Switzerland.",
       tags: ["cloud", "architecture", "servicenow", "sovereign-cloud"],
     },
     {
@@ -103,7 +103,7 @@ export const profile = {
       org: "PepsiCo",
       period: "Sep 2019 — Aug 2020",
       blurb:
-        "Bridged IT and business stakeholders; managed project delivery, vendor relationships, and technology rollouts.",
+        "Connected IT and business stakeholders across delivery, vendor coordination, and technology rollout.",
       tags: ["it", "stakeholder-management", "delivery"],
     },
   ] as Experience[],
